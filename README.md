@@ -42,3 +42,15 @@ terraform import
 
 ## terraform cloud as backend
 terraform login, terraform plan, terraform apply
+  
+## to taint resources
+terraform apply -replace=<res_name>
+  
+## to refresh state file
+terraform apply -refresh-only
+  
+## to have human redable state 
+terraform show
+  
+## to upadte modules/plugins
+terraform get
